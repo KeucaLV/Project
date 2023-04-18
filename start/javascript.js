@@ -1,6 +1,7 @@
 function pievienot(){
-    let div = document.getElementById("list");
-    let text = document.getElementById('text').value;
-    div.append(text);
-
+    let uzdevums = document.getElementById('text').value;
+    const listItem = document.createElement("li");
+    listItem.textContent = uzdevums;
+    document.getElementById("list").appendChild(listItem);
+    document.getElementById('text').value = "";
 }
